@@ -15,7 +15,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "permissions": {
+    "camera": "Allow $(PRODUCT_NAME) to access your camera",
+    "mediaLibrary": "Allow $(PRODUCT_NAME) to access your media library"
+  }
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +29,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+   "plugins": [
+      "expo-font",
+      "expo-image-picker"
+    ],
+    "permissions": {
+      "photos": {
+        "description": "The app accesses your photos to let you share them with your friends."
+      }
     }
   }
 }
